@@ -5,39 +5,41 @@
 /* Google Fonts */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fa;
-  color: #202124;
+  background-color: #202124; /* Dark background */
+  color: #e8eaed; /* Light text */
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Google Sans', 'Open Sans', sans-serif;
 }
 
-/* Custom Overrides for Bootstrap to match Google Material Design 3 */
+/* Custom Overrides for Bootstrap to match Google Material Design 3 Dark Mode */
 
 .text-primary {
-  color: #1a73e8 !important;
+  color: #8ab4f8 !important; /* Light blue for dark mode */
 }
 
 .btn-primary {
-  background-color: #1a73e8;
-  border-color: #1a73e8;
+  background-color: #8ab4f8;
+  border-color: #8ab4f8;
+  color: #202124;
 }
 
 .btn-primary:hover {
-  background-color: #1557b0;
-  border-color: #1557b0;
+  background-color: #aecbfa;
+  border-color: #aecbfa;
+  color: #202124;
 }
 
 .btn-outline-secondary {
-  color: #5f6368;
-  border-color: #dadce0;
+  color: #9aa0a6;
+  border-color: #5f6368;
 }
 
 .btn-outline-secondary:hover {
-  background-color: #f1f3f4;
-  color: #202124;
-  border-color: #dadce0;
+  background-color: #3c4043;
+  color: #e8eaed;
+  border-color: #5f6368;
 }
 
 .form-control:focus {
@@ -54,4 +56,22 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+/* Custom scrollbar for dark mode */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202124; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #5f6368; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9aa0a6; 
 }
